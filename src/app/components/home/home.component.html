@@ -1,0 +1,14 @@
+
+<app-loading *ngIf="cargar"></app-loading>
+
+<div *ngIf="error" class="alert alert-danger animated fadeIn">
+    <h3>
+        error!!
+    </h3>
+
+<p>
+{{ ms }} 
+</p>
+</div>
+
+<app-tarjetas [items]="nuevo"></app-tarjetas>
